@@ -86,5 +86,24 @@ body {
 div.get-time {
   text-align: center;
   margin: 2rem;
-  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
 }
