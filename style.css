@@ -1,0 +1,80 @@
+/* -------------------- General styling -------------------- */
+
+* {
+  font-family: 'Oxygen', sans-serif;
+}
+
+body {
+  animation: 100000ms ease-in-out infinite color-change;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: teal;
+  }
+  20% {
+    background-color: gold;
+  }
+  40% {
+    background-color: indianred;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: teal;
+  }
+}
+
+/* -------------------- Clock styling -------------------- */
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid black;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* account for the height of the clock hands */
+  transform: translateY(-3px); 
+}
+
+/* -------------------- Hand styling -------------------- */
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  /* This moves the point of rotation to the end of the element as opposed to the default 50% across */
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+.hour-hand {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.second-hand {
+  background: red;
+}
+
+/* -------------------- Header styling -------------------- */
+
+div.get-time {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
