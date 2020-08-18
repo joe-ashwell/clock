@@ -49,6 +49,16 @@ body {
   transform: translateY(-3px); 
 }
 
+@media only screen and (max-width: 767px) {
+  
+  .clock {
+    width: 15rem;
+    height: 15rem;
+    border: 10px solid black;
+  }
+
+}
+
 /* -------------------- Hand styling -------------------- */
 
 .hand {
