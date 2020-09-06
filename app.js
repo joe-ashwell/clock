@@ -17,7 +17,7 @@ let setDate = () => {
   const now = new Date();
   const year = now.getFullYear();
   const month = now.getMonth();
-  const day = now.getDay();
+  const day = now.getDate();
 
   // Empty variables to use in the conditional for styling
   let updateMinutes;
